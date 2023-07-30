@@ -59,7 +59,7 @@ public class WithoutPillarsOfOOPS {
 
     public static void main(String[] args) {
 
-        Square s = new Square(2);
+        Square s = new Square(2); // constructor is called;
         Rectangle r = new Rectangle(2, 3);
         Circle c = new Circle(2);
 
