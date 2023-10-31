@@ -6,10 +6,10 @@ class gusser
 {
     private int GusserNumber;
 
-    public void setGusserNumber(int GusserNumber) {
-        this.GusserNumber = GusserNumber;
+    public  void setGusserNumber() {
+        Random setGusser = new Random();
+        GusserNumber = setGusser.nextInt(11);
     }
-
     public int getGusserNumber() {
         return GusserNumber;
     }
@@ -40,8 +40,7 @@ class umpire
 
     public void setTakeNoofGusser() // get the input from the Gusser
     {
-        System.out.println("Enter the Gusser Number :");
-        g.setGusserNumber(sc.nextInt());
+        g.setGusserNumber();
         this.takeNoofGusser = g.getGusserNumber();
     }
 
@@ -111,8 +110,11 @@ public class Main {
     {
         umpire U = new umpire();
         U.setTakeNoofGusser();
+        System.out.println("Guess the GusserNumber in Range of (0-10)");
         U.setPlayersNumber();
+        System.out.println("The GusserNumber was :"+ U.g.getGusserNumber());
         U.result();
+
     }
 
 }
