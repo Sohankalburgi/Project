@@ -1,5 +1,7 @@
 import java.util.*;
-
+// Game Gusser Game
+// This game is to Take input from Gusser and 3 players the Number and check whether which player
+// gives same input as that of gusser
 class gusser
 {
     private int GusserNumber;
